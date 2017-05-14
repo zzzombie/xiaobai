@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.thedawn.notedemo1.MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.SearchView
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="#F0F0F0F0"
+        android:padding="5dp"
+        ></android.support.v7.widget.SearchView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ListView
+            android:id="@+id/list"
+            android:padding="2dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"></ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="文字"
+            android:padding="5dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="图文"
+            android:padding="5dp"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="视频"
+            android:padding="5dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
